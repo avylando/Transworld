@@ -1,0 +1,41 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Karla";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Karla-Regular.woff2") format("woff2"), url("../fonts/Karla-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Karla";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Karla-Bold.woff2") format("woff2"), url("../fonts/Karla-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Font Awesome";
+  src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff");
+}
+
+body {
+  font-family: "Karla", "Tahoma", sans-serif;
+}
+
+.container {
+  max-width: 2880px;
+}
+
+// @media screen and (min-width: 2000px) {
+//   .container,
+//   .container-fluid {
+//     padding-left: 200px;
+//     padding-right: 200px;
+//   }
+// }
+
+img {
+  width: 100%;
+  height: auto;
+}

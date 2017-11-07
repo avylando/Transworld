@@ -1,0 +1,38 @@
+.story-card {
+
+  &--video {
+    position: relative;
+  }
+}
+
+.story-card__column {
+  position: absolute;
+  bottom: 0;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 65px;
+
+  &--left {
+    left: 0;
+    text-align: left;
+  }
+
+  &--right {
+    right: 0;
+    text-align: right;
+  }
+}
+
+.story-card__icon-video {
+  width: 98px;
+}
+
+.story-card__name {
+  display: inline-block;
+  color: #ffffff;
+}
+
+.story-card__sub {
+  display: inline-block;
+  color: #ffffff;
+}

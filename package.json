@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/newborn74/sedona-adaptive.git"
+    "url": "git+https://github.com/newborn74/Transworld.git"
   },
   "author": "new_born74",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/newborn74/sedona-adaptive/issues"
+    "url": "https://github.com/newborn74/Transworld/issues"
   },
-  "homepage": "https://github.com/newborn74/sedona-adaptive#readme",
+  "homepage": "https://github.com/newborn74/Transworld#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "grunt": "^1.0.1",
