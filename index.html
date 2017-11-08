@@ -26,50 +26,49 @@
   <header class="main-header">
     <div class="container-fluid">
       <div class="row">
-        <nav class="main-header__nav navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#menu-block">
-                <span class="sr-only">Открыть навигацию</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a href="№" class="main-header__logo">
-                <img src="img/logo-tws-black.png">
+        <nav class="main-header__nav navbar">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#menu-block">
+              <span class="sr-only">Открыть навигацию</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="№" class="main-header__logo">
+              <img src="img/logo-tws-black.png" width="127" height="127">
+            </a>
+          </div>
+          <div class="main-header__menu-block" id="menu-block">
+            <ul class="main-header__menu nav navbar-nav">
+              <li class="main-header__menu-item">
+                <a class="main-header__menu-link" href="#">Features</a>
+              </li>
+              <li class="main-header__menu-item">
+                <a class="main-header__menu-link" href="#">Videos</a>
+              </li>
+              <li class="main-header__menu-item">
+                <a class="main-header__menu-link" href="#">Photos</a>
+              </li>
+              <li class="main-header__menu-item">
+                <a class="main-header__menu-link" href="#">Magazine</a>
+              </li>
+              <li class="main-header__menu-item">
+                <a class="main-header__menu-link" href="#">Store</a>
+              </li>
+              <li class="main-header__menu-item">
+                <a class="main-header__menu-link" href="#">How-tos</a>
+              </li>
+            </ul>
+            <div class="main-header__user-nav">
+              <a class="main-header__menu-link" href="#" class="cart">
+                My Cart
+                <i class="fa fa-shopping-cart"></i>
               </a>
             </div>
-            <div class="main-header__menu-block" id="menu-block">
-              <ul class="main-header__menu nav navbar-nav">
-                <li class="main-header__menu-item">
-                  <a href="#">Features</a>
-                </li>
-                <li class="main-header__menu-item">
-                  <a href="#">Videos</a>
-                </li>
-                <li class="main-header__menu-item">
-                  <a href="#">Photos</a>
-                </li>
-                <li class="main-header__menu-item">
-                  <a href="#">Magazine</a>
-                </li>
-                <li class="main-header__menu-item">
-                  <a href="#">Store</a>
-                </li>
-                <li class="main-header__menu-item">
-                  <a href="#">How-tos</a>
-                </li>
-              </ul>
-              <div class="main-header__user-nav">
-                <a href="#" class="cart">
-                  My Cart
-                  <i class="fa fa-shopping-cart"></i>
-                </a>
-              </div>
-            </div>
           </div>
-        </nav>
       </div>
+      </nav>
+    </div>
     </div>
   </header>
 
@@ -77,40 +76,34 @@
 
     <section class="promo">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row promo__row">
           <div class="promo__canvas col-lg-8">
-            <div class="container-fluid">
-              <img src="img/break-road@1x.jpg" alt="" class="promo__image">
-            </div>
-
+            <img src="img/break-road@1x.jpg" alt="Break-road" class="promo__image" width="1940" height="1390">
           </div>
           <div class="features col-lg-4">
-            <div class="container-fluid">
+            <div class="features__wrapper">
               <h2 class="features__caption caption">Features</h2>
-              <h3 class="features__title">Readers choice awards</h3>
+              <h3 class="features__title custom-title">Readers choice awards</h3>
               <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dolor rutrum neque pretium hendrerit. Etiam
                 rutrum condimentum urna quis malesuada.</p>
               <div class="features__sub sub">
                 <a href="#" class="features__more">
-                  Read more
+                  <span>Read more</span>
                   <i class="fa fa-long-arrow-right"></i>
                 </a>
               </div>
-              <nav class="pagination features__pagination">
-                <ul class="pager">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-long-arrow-left"></i> Prev</a>
-                  </li>
-                  <li>
-                    <a href="#">Next
-                      <i class="fa fa-long-arrow-right"></i>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
             </div>
-
+            <div class="row features__pagination">
+              <div class="features__btn-block col-lg-6">
+                <a class="features__btn btn" href="#">
+                  <i class="fa fa-long-arrow-left"></i> Prev</a>
+              </div>
+              <div class="features__btn-block col-lg-6">
+                <a class="features__btn btn" href="#">Next
+                  <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -118,100 +111,102 @@
 
     <section class="stories">
       <div class="container-fluid">
-        <h2 class="stories__title">Latest stories</h2>
-        <button class="stories__btn btn btn-default" type="button">
-          Show all
-          <i class="fa fa-chevron-down"></i>
-        </button>
-        <div class="row">
-
+        <div class="row stories__head">
           <div class="col-lg-4">
-            <div class="container-fluid">
-              <article class="story-card">
-                <img src="img/tony-hawk@1x.jpg" alt="Tony Hawk" class="story-card__image" width="745" height="912">
-                <p class="story-card__data">
-                  <time class="story-card__time" datetime="2016-01-21">21/01/2016</time>
-                  <i class="fa fa-camera"></i>
-                </p>
-                <p class="story-card__sign">
-                  <span>Tony Hawk, Frontside Wallride</span>
-                  <i class="fa fa-long-arrow-right"></i>
-                </p>
-              </article>
-            </div>
+            <h2 class="stories__title">Latest stories</h2>
           </div>
-
-
-          <div class="col-lg-4">
-            <div class="container-fluid">
-              <article class="story-card">
-                <img src="img/white-black-skate@1x.jpg" alt="white-black-skate" class="story-card__image" width="745" height="912">
-                <p class="story-card__data">
-                  <time class="story-card__time" datetime="2016-01-21">21/01/2016</time>
-                  <i class="fa fa-camera"></i>
-                </p>
-                <p class="story-card__sign">
-                  <span>Stephen Lawyer, Backside Kickflip</span>
-                  <i class="fa fa-long-arrow-right"></i>
-                </p>
-              </article>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="container-fluid">
-              <article class="story-card">
-                <img src="img/wardrobe@1x.jpg" alt="wardrobe" class="story-card__image" width="745" height="912">
-                <p class="story-card__data">
-                  <time class="story-card__time" datetime="2016-01-21">21/01/2016</time>
-                  <i class="fa fa-pencil"></i>
-                </p>
-                <p class="story-card__sign">
-                  <span>Agenda Product Preview: January 2017</span>
-                  <i class="fa fa-long-arrow-right"></i>
-                </p>
-              </article>
-            </div>
-          </div>
-
-          <div class="col-lg-8">
-            <div class="container-fluid">
-              <article class="story-card story-card--video">
-                <img src="img/skate-gates@1x.jpg" alt="">
-                <div class="story-card__column story-card__column--left col-lg-6">
-                  <img src="img/icon-video.png" alt="video-camera" class="story-card__icon-video" width="98" height="70">
-                  <h2 class="story-card__caption caption">Video drop</h2>
-                  <p class="story-card__name">Joseph Gil</p>
-                </div>
-                <div class="story-card__column story-card__column--right col-lg-6">
-                  <a class="story-card__sub sub" href="http://">
-                    <span>Watch Now</span>
-                    <i class="fa fa-long-arrow-right"></i>
-                  </a>
-                </div>
-              </article>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4">
-            <div class="container-fluid">
-              <article class="story-card">
-                <img src="img/red-shirt@1x.jpg" alt="red-shirt" class="story-card__image" width="745" height="912">
-                <p class="story-card__data">
-                  <time class="story-card__time" datetime="2016-01-21">21/01/2016</time>
-                  <i class="fa fa-camera"></i>
-                </p>
-                <p class="story-card__sign">
-                  <span>Paul Shier, Frontside Boardslide</span>
-                  <i class="fa fa-long-arrow-right"></i>
-                </p>
-              </article>
-            </div>
+          <div class="col-lg-2 col-lg-offset-1">
+            <button class="stories__btn btn btn-default custom-btn" type="button">
+              Show all
+              <i class="fa fa-chevron-down"></i>
+            </button>
           </div>
 
         </div>
-        <button class="stories__btn btn btn-default" type="button">Load More</button>
+        <div class="stories__row">
+
+          <div class="stories__item col-lg-4">
+            <article class="story-card">
+              <img src="img/tony-hawk@1x.jpg" alt="Tony Hawk" class="story-card__image" width="745" height="912">
+              <p class="story-card__data">
+                <i class="fa fa-camera"></i>
+                <time class="story-card__time" datetime="2016-01-21">21/01/2016</time>
+              </p>
+              <p class="story-card__sign">
+                <span>Tony Hawk, Frontside Wallride</span>
+                <i class="fa fa-long-arrow-right story-card__arrow"></i>
+              </p>
+            </article>
+          </div>
+
+
+          <div class="stories__item col-lg-4">
+            <article class="story-card">
+              <img src="img/white-black-skate@1x.jpg" alt="white-black-skate" class="story-card__image" width="745" height="912">
+              <p class="story-card__data">
+                <i class="fa fa-camera"></i>
+                <time class="story-card__time" datetime="2016-01-21">21/01/2016</time>
+              </p>
+              <p class="story-card__sign">
+                <span>Stephen Lawyer, Backside Kickflip</span>
+                <i class="fa fa-long-arrow-right story-card__arrow"></i>
+              </p>
+            </article>
+          </div>
+
+          <div class="stories__item col-lg-4">
+            <article class="story-card">
+              <img src="img/wardrobe@1x.jpg" alt="wardrobe" class="story-card__image" width="745" height="912">
+              <p class="story-card__data">
+                <i class="fa fa-pencil"></i>
+                <time class="story-card__time" datetime="2016-01-21">21/01/2016</time>
+              </p>
+              <p class="story-card__sign">
+                <span>Agenda Product Preview: January 2017</span>
+                <i class="fa fa-long-arrow-right story-card__arrow"></i>
+              </p>
+            </article>
+          </div>
+
+          <div class="stories__item col-lg-8">
+            <article class="story-card story-card--video">
+              <img src="img/skate-gates@1x.jpg" alt="">
+              <div class="story-card__column story-card__column--left col-lg-6">
+                <img src="img/icon-video.png" alt="video-camera" class="story-card__icon-video" width="98" height="70">
+                <h2 class="story-card__caption caption">Video drop</h2>
+                <p class="story-card__name custom-title">Joseph Gil</p>
+              </div>
+              <div class="story-card__column story-card__column--right col-lg-6">
+                <a class="story-card__sub sub" href="http://">
+                  <span>Watch Now</span>
+                  <i class="fa fa-long-arrow-right story-card__arrow"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+
+
+          <div class="stories__item col-lg-4">
+            <article class="story-card">
+              <img src="img/red-shirt@1x.jpg" alt="red-shirt" class="story-card__image" width="745" height="912">
+              <p class="story-card__data">
+                <i class="fa fa-camera"></i>
+                <time class="story-card__time" datetime="2016-01-21">21/01/2016</time>
+              </p>
+              <p class="story-card__sign">
+                <span>Paul Shier, Frontside Boardslide</span>
+                <i class="fa fa-long-arrow-right story-card__arrow"></i>
+              </p>
+            </article>
+          </div>
+
+        </div>
+
+        <div class="row stories__foot">
+          <div class="col-lg-2 col-lg-offset-5 stories__foot-block">
+            <button class="stories__btn btn btn-default custom-btn" type="button">Load More</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -219,36 +214,105 @@
       <div class="container-fluid">
         <div class="row">
 
-          <div class="col-lg-8">
-            <div class="container-fluid">
-              <h2 class="interview__caption caption">Reel talk</h2>
-              <h3 class="interview__person">Brad Rosado</h3>
-              <img src="img/two-skaters@1x.jpg" alt="two-skaters" class="interview__image">
+          <div class="col-lg-8 interview__column">
+            <h2 class="interview__caption caption">Reel talk</h2>
+            <h3 class="interview__person custom-title">Brad Rosado</h3>
+            <img src="img/two-skaters@1x.jpg" alt="two-skaters" class="interview__image">
+          </div>
+
+          <div class="col-lg-4 interview__column">
+            <h2 class="interview__caption caption">More like this</h2>
+            <ul class="interview__list list-unstyled">
+              <li class="interview__list-item">
+                <a class="interview__item-link" href="#">
+                  <span>Reel Talk: Jake Thompson</span>
+                  <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </li>
+              <li class="interview__list-item">
+                <a class="interview__item-link" href="#">
+                  <span>Reel Talk: Brett Nichols</span>
+                  <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </li>
+              <li class="interview__list-item">
+                <a class="interview__item-link" href="#">
+                  <span>Reel Talk: Johnny Wilson</span>
+                  <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="http://" class="interview__btn btn custom-btn">View All</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="magazine">
+      <div class="container-fluid">
+
+        <div class="row magazine__head">
+          <div class="col-lg-4 col-lg-offset-4">
+            <h2 class="magazine__caption caption">Magazine</h2>
+            <h3 class="magazine__title custom-title">Subscription</h3>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="row magazine__images-row">
+              <div class="col-lg-4 magazine__image-column">
+                <img src="img/magazine-sm@1x.jpg" alt="magazine-sm" class="magazine__image magazine__image--small" width="448" height="734">
+              </div>
+              <div class="col-lg-8 magazine__image-column">
+                <img src="img/magazine-lg@1x.jpg" alt="magazine-lg" class="magazine__image magazine__image--big" width="732" height="943">
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4">
-            <div class="container-fluid">
-              <h2 class="interview__caption caption">More like this</h2>
-              <ul class="interview__list">
-                <li class="interview__list-item">
-                  <a href="#">Reel Talk: Jake Thompson
-                    <i class="fa fa-long-arrow-right"></i>
-                  </a>
-                </li>
-                <li class="interview__list-item">
-                  <a href="#">Reel Talk: Brett Nichols
-                    <i class="fa fa-long-arrow-right"></i>
-                  </a>
-                </li>
-                <li class="interview__list-item">
-                  <a href="#">Reel Talk: Johnny Wilson
-                    <i class="fa fa-long-arrow-right"></i>
-                  </a>
-                </li>
-              </ul>
-              <a href="http://" class="interview__btn btn btn-default">View All</a>
+          <div class="col-lg-5 magazine__text-column">
+            <h4 class="magazine__current">Current issue:</h4>
+            <h5 class="magazine__date">January 2017</h5>
+            <p class="magazine__content">For over 25 years, TransWorld SKATEboarding has showcased the best photography, creative directions and storytelling
+              in skateboarding. More than just the world's #1 skateboarding magazine, TransWorld SKATEboarding is skateboarding,
+              delivering the best original content.</p>
+            <div class="row magazine__buttons-block">
+              <div class="col-lg-5">
+                <button class="magazine__btn btn custom-btn" type="button">Print edition</button>
+              </div>
+              <div class="col-lg-5 col-lg-offset-1">
+                <button class="magazine__btn btn custom-btn" type="button">Digital edition</button>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="memories">
+      <div class="container-fluid">
+        <div class="row memories__row">
+
+          <div class="col-lg-4 memories__features features features--bottom">
+            <div class="features__wrapper">
+              <h2 class="features__caption caption">Features</h2>
+              <h3 class="features__title custom-title">Dylan Rieder</h3>
+              <p class="features__subtitle">1988-2016</p>
+              <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dolor rutrum neque pretium hendrerit. Etiam
+                rutrum condimentum urna quis malesuada.</p>
+              <div class="features__sub sub">
+                <a href="#" class="features__more">
+                  <span>Watch Video</span>
+                  <i class="fa fa-long-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-lg-offset-4 memories__canvas">
+            <img src="img/dylan-rieder@1x.jpg" alt="Dylan Rieder" class="memories__image" width="2056" height="1161">
           </div>
 
         </div>

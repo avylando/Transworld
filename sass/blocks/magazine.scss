@@ -1,0 +1,77 @@
+.magazine {
+  padding-top: 220px;
+  padding-bottom: 555px;
+  background-color: #ffffff;
+  background-image: url("../img/bg-skater@1x.jpg");
+  background-position: 0 350%;
+  background-repeat: no-repeat;
+}
+
+.magazine__head {
+  margin-bottom: 220px;
+}
+
+.magazine__caption {
+  text-align: center;
+}
+
+.magazine__title {
+  text-align: center;
+}
+
+.magazine__images-row {
+  margin-left: -40px;
+}
+
+.magazine__image-column {
+
+  &:first-child {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &:last-child {
+    padding-left: 130px;
+  }
+}
+
+.magazine__image {
+  display: block;
+
+  &--small {
+    max-width: 448px;
+    max-height: 734px;
+    margin-top: 100px;
+  }
+
+  &--big {
+    max-width: 732px;
+    max-height: 943px;
+  }
+}
+
+.magazine__text-column {
+  padding-left: 120px;
+}
+
+.magazine__current {
+  font-size: 40px;
+  color: #1f1f1f;
+  margin-top: 100px;
+}
+
+.magazine__date {
+  font-size: 106px;
+  line-height: 150px;
+}
+
+.magazine__content {
+  margin-bottom: 100px;
+}
+
+.magazine__btn {
+  text-transform: capitalize;
+  width: 430px;
+  height: 150px;
+  background-color: $textcolor;
+}

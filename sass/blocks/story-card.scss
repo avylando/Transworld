@@ -5,6 +5,27 @@
   }
 }
 
+.story-card__data {
+  font-weight: 700;
+  color: #7f7f7f;
+  margin-top: 15px;
+}
+
+.story-card__sign {
+  font-weight: 700;
+  color: #000000;
+  text-align: right;
+  padding-right: 10px;
+
+  span {
+    float: left;
+  }
+}
+
+.story-card__arrow {
+  font-size: 45px;
+}
+
 .story-card__column {
   position: absolute;
   bottom: 0;
@@ -29,10 +50,9 @@
 
 .story-card__name {
   display: inline-block;
+  font-family: "Lucida Fax",serif;
+  font-size: 92px;
+  line-height: 100px;
   color: #ffffff;
 }
 
-.story-card__sub {
-  display: inline-block;
-  color: #ffffff;
-}

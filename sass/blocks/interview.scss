@@ -1,0 +1,48 @@
+.interview {
+  padding-left: 100px;
+  padding-right: 100px;
+  background-image: linear-gradient(to right, #191919 0%, #191919 50%, #1f1f1f 50%, #1f1f1f 100%);
+  padding-bottom: 260px;
+}
+
+.interview__column {
+  padding-top: 200px;
+
+  &:last-child {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 650px;
+  }
+}
+
+.interview__person {
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.interview__btn {
+  width: 320px;
+  background-color: transparent;
+}
+
+.interview__list {
+  margin-bottom: 100px;
+}
+
+.interview__list-item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.interview__item-link {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 100px;
+  color: #ffffff;
+  text-align: right;
+  width: 100%;
+
+  span {
+    float: left;
+  }
+}
