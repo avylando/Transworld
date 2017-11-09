@@ -1,14 +1,7 @@
 .magazine {
-  padding-top: 220px;
-  padding-bottom: 555px;
   background-color: #ffffff;
   background-image: url("../img/bg-skater@1x.jpg");
-  background-position: 0 350%;
   background-repeat: no-repeat;
-}
-
-.magazine__head {
-  margin-bottom: 220px;
 }
 
 .magazine__caption {
@@ -19,8 +12,13 @@
   text-align: center;
 }
 
+.magazine__body {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .magazine__images-row {
-  margin-left: -40px;
+  margin-left: -55px;
 }
 
 .magazine__image-column {
@@ -28,10 +26,6 @@
   &:first-child {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  &:last-child {
-    padding-left: 130px;
   }
 }
 
@@ -55,23 +49,115 @@
 }
 
 .magazine__current {
-  font-size: 40px;
   color: #1f1f1f;
-  margin-top: 100px;
-}
-
-.magazine__date {
-  font-size: 106px;
-  line-height: 150px;
-}
-
-.magazine__content {
-  margin-bottom: 100px;
 }
 
 .magazine__btn {
   text-transform: capitalize;
-  width: 430px;
-  height: 150px;
   background-color: $textcolor;
 }
+
+@media (min-width: $desktop-width) {
+  .magazine {
+    padding-top: 100px;
+    padding-bottom: 250px;
+    background-position: 50% 0;
+  }
+
+  .magazine__head {
+    margin-bottom: 150px;
+  }
+
+  .magazine__image {
+    display: block;
+
+    &--small {
+      max-width: 448px;
+      max-height: 734px;
+      margin-top: 65px;
+    }
+
+    &--big {
+      max-width: 732px;
+      max-height: 943px;
+    }
+  }
+
+  .magazine__image-column {
+    &:last-child {
+      padding-left: 70px;
+    }
+  }
+
+  .magazine__current {
+    font-size: 26px;
+    margin-top: 28px;
+  }
+
+  .magazine__date {
+    font-size: 70px;
+    line-height: 105px;
+  }
+
+  .magazine__content {
+    margin-bottom: 80px;
+  }
+
+  .magazine__btn {
+    width: 200px;
+    height: 70px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .magazine {
+    padding-top: 220px;
+    padding-bottom: 555px;
+    background-position: 50% 350%;
+  }
+
+  .magazine__head {
+    margin-bottom: 220px;
+  }
+
+  .magazine__image {
+    display: block;
+
+    &--small {
+      max-width: 448px;
+      max-height: 734px;
+      margin-top: 100px;
+    }
+
+    &--big {
+      max-width: 732px;
+      max-height: 943px;
+    }
+  }
+
+  .magazine__image-column {
+    &:last-child {
+      padding-left: 130px;
+    }
+  }
+
+  .magazine__current {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+
+  .magazine__date {
+    font-size: 106px;
+    line-height: 150px;
+  }
+
+  .magazine__content {
+    margin-bottom: 100px;
+  }
+
+  .magazine__btn {
+    width: 430px;
+    height: 150px;
+  }
+}
+

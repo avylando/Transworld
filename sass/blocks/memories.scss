@@ -4,11 +4,25 @@
   margin-right: -40px;
 }
 
+.memories__features {
+  width: 27.77%;
+}
+
 .memories__canvas {
+  width: 72.23%;
+  margin-left: 27.77%;
   padding-left: 0;
   padding-right: 0;
 }
 
-.memories__image {
-  height: 1161px;
+@media (min-width: $desktop-width) {
+  .memories__image {
+    height: 880px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .memories__image {
+    height: 1161px;
+  }
 }

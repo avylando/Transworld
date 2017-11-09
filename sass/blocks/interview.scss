@@ -1,18 +1,5 @@
 .interview {
-  padding-left: 100px;
-  padding-right: 100px;
   background-image: linear-gradient(to right, #191919 0%, #191919 50%, #1f1f1f 50%, #1f1f1f 100%);
-  padding-bottom: 260px;
-}
-
-.interview__column {
-  padding-top: 200px;
-
-  &:last-child {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 650px;
-  }
 }
 
 .interview__person {
@@ -36,13 +23,61 @@
 
 .interview__item-link {
   display: inline-block;
-  font-size: 40px;
-  line-height: 100px;
   color: #ffffff;
   text-align: right;
   width: 100%;
 
   span {
     float: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interview {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 160px;
+  }
+
+  .interview__column {
+    padding-top: 80px;
+
+    &:first-child {
+      padding-right: 125px;
+    }
+
+    &:last-child {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 320px;
+    }
+  }
+
+  .interview__item-link {
+    font-size: 26px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .interview {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 260px;
+  }
+
+  .interview__column {
+    padding-top: 200px;
+
+    &:last-child {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 650px;
+    }
+  }
+
+  .interview__item-link {
+    font-size: 40px;
+    line-height: 100px;
   }
 }

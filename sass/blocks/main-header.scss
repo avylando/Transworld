@@ -1,19 +1,16 @@
 .main-header__nav {
-  font-size: 32px;
-  line-height: 54.96px;
   margin-bottom: 0;
-  background-color: #ffffff;
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 87%,
+  #e1e1e1 87%, #e1e1e1 87.2%, #f3f3f3 87.2%, #f3f3f3 100%);
 }
 
 .main-header__logo {
   display: block;
-  margin-top: 25px;
+  padding-left: 25px;
 }
 
 .main-header__menu-block {
-  padding-top: 56px;
-  padding-bottom: 56px;
-  width: 65%;
+  width: 78%;
   margin-left: auto;
 }
 
@@ -22,12 +19,48 @@
   width: 75%;
 }
 
+.main-header__menu-item {
+  width: 14%;
+  text-align: center;
+}
+
 .main-header__menu-link {
   color: #000000;
 }
 
 .main-header__user-nav {
   float: right;
-  width: 15%;
-  background-color: #f3f3f3;
+  width: 12%;
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__nav {
+    font-size: 24px;
+    line-height: 45px;
+  }
+
+  .main-header__menu-block {
+    padding-top: 48px;
+  }
+
+  .main-header__logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .main-header__nav {
+    font-size: 32px;
+    line-height: 55px;
+  }
+
+  .main-header__menu-block {
+    padding-top: 56px;
+  }
+
+  .main-header__logo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }

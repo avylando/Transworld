@@ -1,0 +1,152 @@
+.main-footer {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background-color: $footerbg;
+}
+
+.main-footer__wrapper {
+  border: 2px solid $footerborder;
+  background-image:
+  linear-gradient(to right, transparent 0%, transparent 10%, $footerborder 10%,
+   $footerborder 10.2%, transparent 10.2%, transparent 28.7%, $footerborder 28.7%,
+   $footerborder 28.9%, transparent 28.9%, transparent 72.5%, $footerborder 72.5%,
+   $footerborder 72.7%, transparent 72.7%, transparent 100%);
+}
+
+.main-footer__content,
+.main-footer__logo-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main-footer__block{
+  &--logo {
+    width: 29%;
+  }
+  &--nav {
+    width: 43.5%;
+  }
+  &--social {
+    width: 27.5%;
+  }
+
+  .main-footer__list {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.main-footer__logo-block {
+  text-align: center;
+}
+
+.main-footer__image {
+  &--logo {
+    max-height: 139px;
+    max-width: 139px;
+  }
+
+  &--magazine {
+    max-height: 105px;
+    max-width: 376px;
+  }
+}
+
+.main-footer__link {
+  color: $footertext;
+}
+
+.main-footer__menu {
+  padding-left: 4%;
+}
+
+.main-footer__menu-item {
+  width: 16%;
+  text-align: center;
+}
+
+.main-footer__list {
+  .main-footer__social-list-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    min-height: 200px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .main-footer__block{
+    &--nav {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &--social {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+
+  .main-footer__image--magazine {
+    margin-top: 25px;
+  }
+
+  .main-footer__link {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .main-footer__social-list-item {
+    &:first-child {
+      margin-right: 5%;
+    }
+
+    &:not(:first-child) {
+      margin-left: 5%;
+    }
+  }
+}
+
+@media (min-width: $large-width) {
+  .main-footer__wrapper {
+    min-height: 235px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .main-footer__block{
+    &--nav {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+    &--social {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+
+  .main-footer__image--magazine {
+    margin-top: 15px;
+  }
+
+  .main-footer__link {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .main-footer__social-list-item {
+    &:first-child {
+      margin-right: 7%;
+    }
+
+    &:not(:first-child) {
+      margin-left: 7%;
+    }
+  }
+}

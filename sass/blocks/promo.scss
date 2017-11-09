@@ -8,6 +8,14 @@
   padding-right: 0;
 }
 
-.promo__image {
-  height: 1390px;
+@media (min-width: $desktop-width) {
+  .promo__image {
+    height: 990px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .promo__image {
+    height: 1390px;
+  }
 }
