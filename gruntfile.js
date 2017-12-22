@@ -153,12 +153,27 @@ module.exports = function (grunt) {
           ],
           dest: "build"
         }]
-      }
+      },
+    },
+
+    copy: {
+      docs: {
+        files: [{
+          expand: true,
+          cwd: "build",
+          src: "**",
+          dest: "docs/"
+        }],
+      },
     },
 
     clean: {
       build: ["build"],
       js: ["build/js/*.min.js"]
+    },
+
+    clean: {
+      docs: ["docs"]
     }
   });
 
@@ -168,12 +183,17 @@ module.exports = function (grunt) {
 
   grunt.registerTask("build", [
     "clean:build",
-    "copy",
+    "copy:build",
     "sass",
     "postcss",
     "csso",
     "svgstore",
     "posthtml",
     "jsminify"
+  ]);
+
+  grunt.registerTask("docs", [
+    "clean:docs",
+    "copy:docs"
   ]);
 };
